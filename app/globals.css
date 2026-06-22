@@ -1,26 +1,234 @@
 @import "tailwindcss";
 
+@theme {
+  --color-forest: #014A36;
+  --color-gold: #C8922B;
+  --color-ivory: #F8F5EF;
+  --color-charcoal: #222222;
+  --color-sand: #E8DDCB;
+  
+  --color-deep-forest: #002F24;
+  --color-muted-gold: #A87318;
+  --color-soft-gold: #E7C77A;
+  --color-warm-white: #FFFDF8;
+  --color-line: #D8CDBB;
+  --color-danger: #B94A48;
+  --color-success: #1F7A4D;
+  
+  /* English display/headings: Space Grotesk */
+  --font-display: var(--font-grotesk), system-ui, sans-serif;
+  /* English body: Plus Jakarta Sans */
+  --font-sans: var(--font-jakarta), var(--font-grotesk), system-ui, sans-serif;
+  /* Bangla display/headings: Anek Bangla */
+  --font-display-bangla: var(--font-anek), var(--font-siliguri), system-ui, sans-serif;
+  /* Bangla body: Hind Siliguri */
+  --font-bangla: var(--font-siliguri), var(--font-anek), system-ui, sans-serif;
+  /* Legacy serif reference (keep for any remaining classes) */
+  --font-serif: Georgia, serif;
+  
+  --transition-bezier: all 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  --transition-soft: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #014A36; /* Cinema Forest Green Backdrop */
+  --foreground: #F8F5EF; /* Warm Ivory Text */
+  --forest: #014A36;
+  --gold: #C8922B;
+  --ivory: #F8F5EF;
+  --charcoal: #014A36; /* Brand Forest Green for high-contrast dark text */
+  --sand: #E8DDCB;
+  --line: rgba(216, 205, 187, 0.15); /* Soft, low-contrast cinema divider */
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+/* Custom 1180px editorial container */
+.container-editorial {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 768px) {
+  .container-editorial {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Cinematic widescreen aspect framing */
+.letterbox-frame {
+  border-top: 40px solid #002F24; /* Deep Forest Green instead of black */
+  border-bottom: 40px solid #002F24;
+}
+
+/* Film grain effect */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 24px 24px;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 99;
+}
+
+/* Dynamic Projector Spotlight flicker */
+@keyframes projectorFlicker {
+  0%, 100% { opacity: 0.96; }
+  10% { opacity: 0.93; }
+  20% { opacity: 0.98; }
+  30% { opacity: 0.92; }
+  45% { opacity: 0.97; }
+  55% { opacity: 0.94; }
+  70% { opacity: 0.99; }
+  85% { opacity: 0.91; }
+  90% { opacity: 0.96; }
+}
+
+.projector-flicker {
+  animation: projectorFlicker 4s infinite alternate;
+}
+
+/* Spotlight glow highlights */
+.spotlight-glow {
+  background: radial-gradient(circle, rgba(200, 146, 43, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Screenplay typewriter style */
+.screenplay-font {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Motif utilities for experience design */
+.memory-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #C8922B;
+  border-radius: 9999px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.connector-line {
+  height: 1px;
+  background-color: rgba(216, 205, 187, 0.15);
+  width: 100%;
+}
+
+/* Filmstrip sprocket-dashed borders */
+.sprocket-border-x {
+  border-left: 2px dashed rgba(200, 146, 43, 0.12);
+  border-right: 2px dashed rgba(200, 146, 43, 0.12);
+}
+
+.sprocket-border-y {
+  border-top: 2px dashed rgba(200, 146, 43, 0.12);
+  border-bottom: 2px dashed rgba(200, 146, 43, 0.12);
+}
+
+/* Viewfinder overlay styling helper */
+.viewfinder-card {
+  position: relative;
+  background-color: #002F24;
+  border: 1px solid rgba(216, 205, 187, 0.12);
+}
+
+/* Drafting table cork/wood board texture background */
+.drafting-board {
+  background-color: #F8F5EF;
+  background-image: radial-gradient(#d8cdbb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Tactile paper texture card */
+.paper-texture {
+  position: relative;
+  background-color: #FFFDF8;
+  background-image: radial-gradient(rgba(0, 47, 36, 0.015) 1px, transparent 0);
+  background-size: 8px 8px;
+}
+
+/* Tape deck key mechanical button press active effect */
+.tapedeck-btn {
+  box-shadow: 0 4px 0 #A87318, 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.tapedeck-btn:active {
+  box-shadow: 0 1px 0 #A87318, 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(3px);
+}
+
+/* Perforated ticket stub border */
+.perforated-border-y {
+  background-image: radial-gradient(circle, transparent 6px, #FFFDF8 6px);
+  background-size: 24px 24px;
+  background-position: top;
+}
+
+/* Sprocket film strip holes for horizontal slides */
+.film-sprockets {
+  background-image: radial-gradient(circle, #014A36 3px, transparent 3px);
+  background-size: 16px 16px;
+  height: 16px;
+}
+
+/* Reduced motion preference support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #002F24;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ivory);
+}
+
+/* Bangla body text */
+.bangla-text {
+  font-family: var(--font-bangla);
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+/* Bangla display/heading text */
+.bangla-heading {
+  font-family: var(--font-display-bangla);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* English display heading override */
+.display-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
 }
