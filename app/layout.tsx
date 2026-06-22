@@ -31,11 +31,7 @@ export const viewport = {
   themeColor: "#014A36",
 };
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
-  ? process.env.NEXT_PUBLIC_SITE_URL
-  : process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "https://experience-bishorgo.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://experience-bishorgo.vercel.app";
 
 const siteDescription = "Bishorgo Experience turns ordinary touchpoints into memorable customer journeys through strategy, branding, high-speed technology, and real-world activation.";
 

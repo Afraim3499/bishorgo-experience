@@ -10,9 +10,8 @@ import { getAllGlossarySlugs } from "@/data/glossary";
 import { getAllChecklistSlugs } from "@/data/checklists";
 import { getAllLocationSlugs } from "@/data/locations";
 import { getAllComparisonSlugs } from "@/data/comparisons";
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://bishorgoexperience.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://experience-bishorgo.vercel.app";
 
   // 1. Static base pages
   const staticRoutes = [
