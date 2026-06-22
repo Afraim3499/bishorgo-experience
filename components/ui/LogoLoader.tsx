@@ -250,7 +250,7 @@ export const LogoLoader: React.FC<LogoLoaderProps> = ({ onComplete, mode = "full
             <div className="w-full h-full bg-[radial-gradient(circle_at_center,rgba(200,146,43,0.03)_0%,transparent_70%)]" />
           </div>
 
-          <div className="relative w-72 h-72 sm:w-96 sm:h-96 flex items-center justify-center">
+          <div className="relative w-[84vw] h-[84vw] sm:w-96 sm:h-96 flex items-center justify-center">
             <svg
               viewBox="0 0 600 600"
               className="w-full h-full text-forest select-none drop-shadow-[0_10px_30px_rgba(0,0,0,0.3)]"

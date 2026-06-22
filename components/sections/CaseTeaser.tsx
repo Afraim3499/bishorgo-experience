@@ -149,23 +149,27 @@ export const CaseTeaser: React.FC = () => {
             <span className="text-[10px] uppercase tracking-widest text-ivory/40 font-mono block mb-1">
               SELECT SCENE CHAPTER
             </span>
-            <div className="flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0 gap-2 scrollbar-none">
-              {scenes.map((scene, index) => (
-                <button
-                  key={scene.id}
-                  onClick={() => setActiveSceneIndex(index)}
-                  className={`flex-shrink-0 lg:w-full text-left px-4 py-3 lg:px-3 lg:py-2 xl:px-4 xl:py-3.5 rounded-xl border font-mono transition-bezier text-xs lg:text-[11px] xl:text-xs flex items-center justify-between gap-3 ${
-                    activeSceneIndex === index
-                      ? "bg-[#002f24] border-gold text-gold shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
-                      : "bg-transparent border-line/10 text-ivory/50 hover:text-ivory/80 hover:border-line/35"
-                  }`}
-                >
-                  <span className="truncate">{scene.number}: {scene.insightTitle.split(" / ")[1]}</span>
-                  <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
-                    activeSceneIndex === index ? "bg-gold animate-ping" : "bg-ivory/20"
-                  }`} />
-                </button>
-              ))}
+            <div className="relative">
+              <div className="flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0 gap-2 scrollbar-none">
+                {scenes.map((scene, index) => (
+                  <button
+                    key={scene.id}
+                    onClick={() => setActiveSceneIndex(index)}
+                    className={`flex-shrink-0 lg:w-full text-left px-4 py-3 lg:px-3 lg:py-2 xl:px-4 xl:py-3.5 rounded-xl border font-mono transition-bezier text-xs lg:text-[11px] xl:text-xs flex items-center justify-between gap-3 ${
+                      activeSceneIndex === index
+                        ? "bg-[#002f24] border-gold text-gold shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
+                        : "bg-transparent border-line/10 text-ivory/50 hover:text-ivory/80 hover:border-line/35"
+                    }`}
+                  >
+                    <span className="truncate">{scene.number}: {scene.insightTitle.split(" / ")[1]}</span>
+                    <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${
+                      activeSceneIndex === index ? "bg-gold animate-ping" : "bg-ivory/20"
+                    }`} />
+                  </button>
+                ))}
+              </div>
+              {/* Fade overlay indicating more items on mobile */}
+              <div className="absolute right-0 top-0 bottom-2 w-12 bg-gradient-to-l from-[#014A36] to-transparent pointer-events-none lg:hidden" />
             </div>
 
             {/* Bangla quote block */}

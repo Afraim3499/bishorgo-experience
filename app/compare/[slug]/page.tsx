@@ -74,8 +74,9 @@ export default async function ComparisonSlugPage({
           </div>
 
           {/* Table Container */}
-          <div className="overflow-x-auto bg-white border border-[#014A36]/10 rounded-3xl shadow-sm">
-            <table className="w-full text-left border-collapse">
+          <div className="relative">
+            <div className="overflow-x-auto bg-white border border-[#014A36]/10 rounded-3xl shadow-sm">
+              <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-[#014A36] text-[#FFFDF8] text-xs font-mono font-bold uppercase tracking-wider">
                   <th className="p-6 md:p-8">Comparison Variable</th>
@@ -103,6 +104,9 @@ export default async function ComparisonSlugPage({
                 ))}
               </tbody>
             </table>
+            </div>
+            {/* Table horizontal scroll indicator fade overlay on mobile */}
+            <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent pointer-events-none md:hidden rounded-r-3xl" />
           </div>
 
           {/* Differentiator Statement Card */}

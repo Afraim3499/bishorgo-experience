@@ -90,20 +90,24 @@ export const CaseStudyTemplateClient: React.FC<Props> = ({ caseStudy }) => {
                 <span className="text-[10px] uppercase tracking-widest text-[#FFFDF8]/45 font-mono block">
                   SCENE INDEX
                 </span>
-                <div className="flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0 gap-2 scrollbar-none">
-                  {caseStudy.scenes.map((scene, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setActiveSceneIndex(index)}
-                      className={`flex-shrink-0 lg:w-full text-left px-4 py-3 rounded-xl border font-mono transition-all text-xs flex items-center justify-between gap-3 ${
-                        activeSceneIndex === index
-                          ? "bg-[#002f24] border-[#C8922B] text-[#C8922B] shadow-lg"
-                          : "bg-transparent border-white/10 text-white/50 hover:text-white/80 hover:border-white/30"
-                      }`}
-                    >
-                      <span className="truncate">{scene.number}: {scene.insightTitle}</span>
-                    </button>
-                  ))}
+                <div className="relative">
+                  <div className="flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible pb-2 lg:pb-0 gap-2 scrollbar-none">
+                    {caseStudy.scenes.map((scene, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setActiveSceneIndex(index)}
+                        className={`flex-shrink-0 lg:w-full text-left px-4 py-3 rounded-xl border font-mono transition-all text-xs flex items-center justify-between gap-3 ${
+                          activeSceneIndex === index
+                            ? "bg-[#002f24] border-[#C8922B] text-[#C8922B] shadow-lg"
+                            : "bg-transparent border-white/10 text-white/50 hover:text-white/80 hover:border-white/30"
+                        }`}
+                      >
+                        <span className="truncate">{scene.number}: {scene.insightTitle}</span>
+                      </button>
+                    ))}
+                  </div>
+                  {/* Fade overlay indicating more items on mobile */}
+                  <div className="absolute right-0 top-0 bottom-2 w-12 bg-gradient-to-l from-[#014A36] to-transparent pointer-events-none lg:hidden" />
                 </div>
               </div>
 
