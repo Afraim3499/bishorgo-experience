@@ -10,42 +10,39 @@ interface AppLayoutProps {
 }
 
 export const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
-  const [loading, setLoading] = useState(true);
-  const [mounted, setMounted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [showLoader, setShowLoader] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReducedMotion) {
-      setLoading(false);
+    const hasShown = sessionStorage.getItem("bishorgo-loader-shown");
+
+    if (!hasShown && !prefersReducedMotion) {
+      setLoading(true);
+      setShowLoader(true);
+      sessionStorage.setItem("bishorgo-loader-shown", "true");
     }
   }, []);
 
-  if (!mounted) {
-    // Prevent server-side flash using cinematic background color
-    return <div className="bg-[#002B20] min-h-screen" />;
-  }
-
   return (
     <>
-      {loading && (
+      {showLoader && (
         <LogoLoader
           mode="full"
-          onComplete={() => setLoading(false)}
+          onComplete={() => {
+            setLoading(false);
+            setShowLoader(false);
+          }}
         />
       )}
       <div
         className={`transition-opacity duration-1000 ease-out flex flex-col min-h-screen ${
-          loading ? "opacity-0 h-screen overflow-hidden" : "opacity-100"
+          loading ? "opacity-0 h-screen overflow-hidden pointer-events-none" : "opacity-100"
         }`}
       >
-        {!loading && (
-          <>
-            <Header />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </>
-        )}
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </div>
     </>
   );

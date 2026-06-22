@@ -31,14 +31,22 @@ export const viewport = {
   themeColor: "#014A36",
 };
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? process.env.NEXT_PUBLIC_SITE_URL
+  : process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "https://experience-bishorgo.vercel.app";
+
+const siteDescription = "Bishorgo Experience turns ordinary touchpoints into memorable customer journeys through strategy, branding, high-speed technology, and real-world activation.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://bishorgoexperience.com"),
+  metadataBase: new URL(baseUrl),
   title: "Bishorgo Experience — We Build Experiences People Remember",
-  description:
-    "Bishorgo Experience helps businesses turn ordinary brand touchpoints into memorable customer journeys through strategy, branding, content, technology, and real-world activation.",
+  description: siteDescription,
   icons: {
     icon: [
       { url: "/favicons/favicon.ico" },
+      { url: "/favicons/favicon.svg", type: "image/svg+xml" },
       { url: "/favicons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
@@ -59,9 +67,8 @@ export const metadata: Metadata = {
   manifest: "/favicons/site.webmanifest",
   openGraph: {
     title: "Bishorgo Experience — We Build Experiences People Remember",
-    description:
-      "Bishorgo Experience helps businesses turn ordinary brand touchpoints into memorable customer journeys through strategy, branding, content, technology, and real-world activation.",
-    url: "https://bishorgoexperience.com",
+    description: siteDescription,
+    url: baseUrl,
     siteName: "Bishorgo Experience",
     images: [
       {
@@ -77,8 +84,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Bishorgo Experience — We Build Experiences People Remember",
-    description:
-      "Bishorgo Experience helps businesses turn ordinary brand touchpoints into memorable customer journeys through strategy, branding, content, technology, and real-world activation.",
+    description: siteDescription,
+    site: "@BishorgoExp",
     images: ["/images/brand/og-image.jpg"],
   },
 };
