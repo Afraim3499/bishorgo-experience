@@ -31,6 +31,20 @@ export async function generateMetadata({
       url: `https://bishorgoexperience.com/experience-audit/${slug}`,
       siteName: "Bishorgo Experience",
       type: "website",
+      images: [
+        {
+          url: "/images/brand/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: audit.metadata.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: audit.metadata.title,
+      description: audit.metadata.description,
+      images: ["/images/brand/og-image.jpg"],
     },
   };
 }

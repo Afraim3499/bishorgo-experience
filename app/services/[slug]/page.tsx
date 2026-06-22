@@ -29,11 +29,20 @@ export async function generateMetadata({
       url: `https://bishorgoexperience.com/services/${slug}`,
       siteName: "Bishorgo Experience",
       type: "website",
+      images: [
+        {
+          url: "/images/brand/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: service.metadata.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: service.metadata.title,
       description: service.metadata.description,
+      images: ["/images/brand/og-image.jpg"],
     },
   };
 }

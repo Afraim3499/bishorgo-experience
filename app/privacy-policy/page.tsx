@@ -9,6 +9,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/privacy-policy",
   },
+  openGraph: {
+    title: "Privacy Policy — Bishorgo Experience",
+    description: "How Bishorgo Experience collects, uses, and safeguards customer information and client data in compliance with best practices.",
+    url: "https://bishorgoexperience.com/privacy-policy",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Privacy Policy — Bishorgo Experience",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy — Bishorgo Experience",
+    description: "How Bishorgo Experience collects, uses, and safeguards customer information and client data in compliance with best practices.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 export default function PrivacyPolicyPage() {

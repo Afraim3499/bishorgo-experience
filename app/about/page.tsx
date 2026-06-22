@@ -11,6 +11,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/about",
   },
+  openGraph: {
+    title: "About — Bishorgo Experience",
+    description:
+      "We do not build brands only to be seen. We build them to be remembered. Meet Bishorgo Experience, a brand experience design studio based in Dhaka.",
+    url: "https://bishorgoexperience.com/about",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Bishorgo Experience",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About — Bishorgo Experience",
+    description:
+      "We do not build brands only to be seen. We build them to be remembered. Meet Bishorgo Experience, a brand experience design studio based in Dhaka.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 const companyValues = [

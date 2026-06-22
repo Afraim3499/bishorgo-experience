@@ -11,6 +11,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/experience-lab",
   },
+  openGraph: {
+    title: "Experience Lab — Bishorgo Experience",
+    description:
+      "আমরা চিন্তা করি, পরীক্ষা করি, মানুষের অভিজ্ঞতা নতুনভাবে দেখি। Read our latest breakdowns, cognitive psychology analyses, and brand unboxing experience experiments.",
+    url: "https://bishorgoexperience.com/experience-lab",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bishorgo Experience Lab",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Experience Lab — Bishorgo Experience",
+    description:
+      "আমরা চিন্তা করি, পরীক্ষা করি, মানুষের অভিজ্ঞতা নতুনভাবে দেখি। Read our latest breakdowns, cognitive psychology analyses, and brand unboxing experience experiments.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 export default function ExperienceLabPage() {

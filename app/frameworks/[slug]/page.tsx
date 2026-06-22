@@ -25,6 +25,27 @@ export async function generateMetadata({
     alternates: {
       canonical: `/frameworks/${slug}`,
     },
+    openGraph: {
+      title: framework.metadata.title,
+      description: framework.metadata.description,
+      url: `https://bishorgoexperience.com/frameworks/${slug}`,
+      siteName: "Bishorgo Experience",
+      type: "website",
+      images: [
+        {
+          url: "/images/brand/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: framework.metadata.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: framework.metadata.title,
+      description: framework.metadata.description,
+      images: ["/images/brand/og-image.jpg"],
+    },
   };
 }
 

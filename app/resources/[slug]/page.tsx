@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowRight, FileText, CheckSquare, Star, Mail } from "lucide-react";
 import { getChecklistPage, getAllChecklistSlugs } from "@/data/checklists";
-import { ResourceForm } from "./ResourceForm";
+import { ResourceForm } from "@/app/resources/[slug]/ResourceForm";
 
 export function generateStaticParams() {
   return getAllChecklistSlugs().map((slug) => ({ slug }));
@@ -20,10 +20,31 @@ export async function generateMetadata({
   if (!item) return { title: "Checklist Not Found — Bishorgo Resources" };
 
   return {
-    title: item.metadata.title,
+    title: `${item.metadata.title} — Bishorgo Resources`,
     description: item.metadata.description,
     alternates: {
       canonical: `/resources/${slug}`,
+    },
+    openGraph: {
+      title: `${item.metadata.title} — Bishorgo Resources`,
+      description: item.metadata.description,
+      url: `https://bishorgoexperience.com/resources/${slug}`,
+      siteName: "Bishorgo Experience",
+      type: "website",
+      images: [
+        {
+          url: "/images/brand/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: item.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.metadata.title} — Bishorgo Resources`,
+      description: item.metadata.description,
+      images: ["/images/brand/og-image.jpg"],
     },
   };
 }
@@ -37,8 +58,26 @@ export default async function ChecklistSlugPage({
   const item = getChecklistPage(slug);
   if (!item) notFound();
 
+  // Create CreativeWork Checklist Schema
+  const checklistSchema = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": item.title,
+    "description": item.metadata.description || item.subtitle,
+    "genre": "Checklist",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bishorgo Experience Studio",
+      "url": "https://bishorgoexperience.com"
+    }
+  };
+
   return (
     <div className="bg-[#F8F5EF] text-[#222222] min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(checklistSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative bg-[#014A36] text-[#FFFDF8] pt-32 pb-24 md:pt-44 md:pb-36 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] opacity-[0.03] pointer-events-none select-none">

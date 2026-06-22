@@ -9,6 +9,25 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/terms-and-conditions",
   },
+  openGraph: {
+    title: "Terms & Conditions — Bishorgo Experience",
+    description: "Terms and conditions governing the use of Bishorgo Experience's website, audits, resources, and strategic consulting services.",
+    url: "https://bishorgoexperience.com/terms-and-conditions",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Terms & Conditions — Bishorgo Experience",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions — Bishorgo Experience",
+    description: "Terms and conditions governing the use of Bishorgo Experience's website, audits, resources, and strategic consulting services.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 export default function TermsAndConditionsPage() {

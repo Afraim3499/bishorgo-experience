@@ -10,6 +10,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/contact",
   },
+  openGraph: {
+    title: "Contact — Bishorgo Experience",
+    description:
+      "Tell us what you are building. Start a conversation with Bishorgo Experience for brand systems, Next.js web design, campaigns, and retail activations.",
+    url: "https://bishorgoexperience.com/contact",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact Bishorgo Experience",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact — Bishorgo Experience",
+    description:
+      "Tell us what you are building. Start a conversation with Bishorgo Experience for brand systems, Next.js web design, campaigns, and retail activations.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 const studioDetails = [

@@ -65,10 +65,10 @@ export const metadata: Metadata = {
     siteName: "Bishorgo Experience",
     images: [
       {
-        url: "/images/brand/logo-website.png",
-        width: 800,
-        height: 600,
-        alt: "Bishorgo Experience Logo",
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bishorgo Experience",
       },
     ],
     locale: "en_US",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "Bishorgo Experience — We Build Experiences People Remember",
     description:
       "Bishorgo Experience helps businesses turn ordinary brand touchpoints into memorable customer journeys through strategy, branding, content, technology, and real-world activation.",
-    images: ["/images/brand/logo-website.png"],
+    images: ["/images/brand/og-image.jpg"],
   },
 };
 

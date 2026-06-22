@@ -159,6 +159,27 @@ export async function generateMetadata({
     alternates: {
       canonical: `/method/${slug}`,
     },
+    openGraph: {
+      title: `${phase.title} — The Bishorgo Method`,
+      description: `${phase.title} details discover, define, design, deliver, and deepen steps for customer journey optimization.`,
+      url: `https://bishorgoexperience.com/method/${slug}`,
+      siteName: "Bishorgo Experience",
+      type: "website",
+      images: [
+        {
+          url: "/images/brand/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: `${phase.title} — The Bishorgo Method`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${phase.title} — The Bishorgo Method`,
+      description: `${phase.title} details discover, define, design, deliver, and deepen steps for customer journey optimization.`,
+      images: ["/images/brand/og-image.jpg"],
+    },
   };
 }
 

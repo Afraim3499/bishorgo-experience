@@ -13,6 +13,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/method",
   },
+  openGraph: {
+    title: "The Bishorgo Method — Bishorgo Experience",
+    description:
+      "Attention থেকে memory পর্যন্ত, আমরা পুরো journey design করি। Learn about our 5-step method: Discover, Define, Design, Deliver, and Deepen.",
+    url: "https://bishorgoexperience.com/method",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "The Bishorgo Method",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Bishorgo Method — Bishorgo Experience",
+    description:
+      "Attention থেকে memory পর্যন্ত, আমরা পুরো journey design করি। Learn about our 5-step method: Discover, Define, Design, Deliver, and Deepen.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 const getStepIcon = (id: string) => {

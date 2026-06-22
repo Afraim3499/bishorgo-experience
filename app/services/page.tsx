@@ -14,6 +14,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/services",
   },
+  openGraph: {
+    title: "Services — Bishorgo Experience",
+    description:
+      "We design the touchpoints that make brands unforgettable. Explore our 10 core experience services spanning Brand Strategy, Web Experience, Content, and Activations.",
+    url: "https://bishorgoexperience.com/services",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bishorgo Experience Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services — Bishorgo Experience",
+    description:
+      "We design the touchpoints that make brands unforgettable. Explore our 10 core experience services spanning Brand Strategy, Web Experience, Content, and Activations.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 export default function ServicesPage() {

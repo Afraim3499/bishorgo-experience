@@ -11,6 +11,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/case-studies",
   },
+  openGraph: {
+    title: "Case Studies — Bishorgo Experience",
+    description:
+      "A Dhaka clothing store reimagined as an experience. Read our interactive screenplay-style case study and learn how experience design builds recall.",
+    url: "https://bishorgoexperience.com/case-studies",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bishorgo Experience Case Studies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Case Studies — Bishorgo Experience",
+    description:
+      "A Dhaka clothing store reimagined as an experience. Read our interactive screenplay-style case study and learn how experience design builds recall.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 export default function CaseStudiesPage() {

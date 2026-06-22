@@ -12,6 +12,27 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/experience-audit",
   },
+  openGraph: {
+    title: "Experience Audit — Bishorgo Experience",
+    description:
+      "আপনার brand experience কোথায় ভাঙছে, তা জানুন। Get a free, detailed Experience Audit from Bishorgo covering brand alignment, web speed, and unboxing loops.",
+    url: "https://bishorgoexperience.com/experience-audit",
+    images: [
+      {
+        url: "/images/brand/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bishorgo Experience Audit",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Experience Audit — Bishorgo Experience",
+    description:
+      "আপনার brand experience কোথায় ভাঙছে, তা জানুন। Get a free, detailed Experience Audit from Bishorgo covering brand alignment, web speed, and unboxing loops.",
+    images: ["/images/brand/og-image.jpg"],
+  },
 };
 
 const auditChecks = [

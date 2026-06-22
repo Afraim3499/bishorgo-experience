@@ -19,10 +19,31 @@ export async function generateMetadata({
   if (!item) return { title: "Term Not Found — Bishorgo Glossary" };
 
   return {
-    title: item.metadata.title,
+    title: `${item.metadata.title} — Bishorgo Glossary`,
     description: item.metadata.description,
     alternates: {
       canonical: `/glossary/${slug}`,
+    },
+    openGraph: {
+      title: `${item.metadata.title} — Bishorgo Glossary`,
+      description: item.metadata.description,
+      url: `https://bishorgoexperience.com/glossary/${slug}`,
+      siteName: "Bishorgo Experience",
+      type: "website",
+      images: [
+        {
+          url: "/images/brand/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: item.term,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${item.metadata.title} — Bishorgo Glossary`,
+      description: item.metadata.description,
+      images: ["/images/brand/og-image.jpg"],
     },
   };
 }

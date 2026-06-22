@@ -19,10 +19,31 @@ export async function generateMetadata({
   if (!comp) return { title: "Comparison Not Found — Bishorgo Experience" };
 
   return {
-    title: comp.metadata.title,
+    title: `${comp.metadata.title} — Bishorgo Compare`,
     description: comp.metadata.description,
     alternates: {
       canonical: `/compare/${slug}`,
+    },
+    openGraph: {
+      title: `${comp.metadata.title} — Bishorgo Compare`,
+      description: comp.metadata.description,
+      url: `https://bishorgoexperience.com/compare/${slug}`,
+      siteName: "Bishorgo Experience",
+      type: "website",
+      images: [
+        {
+          url: "/images/brand/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: comp.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${comp.metadata.title} — Bishorgo Compare`,
+      description: comp.metadata.description,
+      images: ["/images/brand/og-image.jpg"],
     },
   };
 }
@@ -36,8 +57,26 @@ export default async function ComparisonSlugPage({
   const comp = getComparisonPage(slug);
   if (!comp) notFound();
 
+  // Create FAQ Schema based on Comparison Rows
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": comp.comparisonTable.map((row) => ({
+      "@type": "Question",
+      "name": `How does Bishorgo's approach to ${row.feature} compare to standard agencies?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `Standard agencies typically: ${row.standardAgency}. In contrast, Bishorgo Experience Studio: ${row.bishorgoStudio}.`
+      }
+    }))
+  };
+
   return (
     <div className="bg-[#F8F5EF] text-[#222222] min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero Section */}
       <section className="relative bg-[#014A36] text-[#FFFDF8] pt-32 pb-24 md:pt-44 md:pb-36 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] opacity-[0.03] pointer-events-none select-none">
