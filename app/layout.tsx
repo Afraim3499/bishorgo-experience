@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Hind_Siliguri, Space_Grotesk, Anek_Bangla } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AppLayout } from "@/components/layout/AppLayout";
 import "./globals.css";
 
@@ -97,6 +98,7 @@ export default function RootLayout({
         {/* Subtle background film grain noise overlay */}
         <div className="film-grain" />
         <AppLayout>{children}</AppLayout>
+        <SpeedInsights />
       </body>
     </html>
   );
