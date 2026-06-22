@@ -21,17 +21,42 @@ export const Header: React.FC = () => {
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-50 bg-[#F8F5EF] border-b border-[#014A36]/12 h-[76px] lg:h-[96px] flex items-center transition-all duration-300">
-        <div className="w-full max-w-[1320px] mx-auto px-5 md:px-10 flex items-center justify-between">
+        <div className="w-full max-w-[1320px] mx-auto px-5 lg:px-10 flex items-center justify-between">
           
-          {/* Left: Logo block using bishorgo-logo-website.png */}
+          {/* Left: Logo block using inline SVG and colored text */}
           <div className="flex items-center select-none">
-            <Link href="/" className="block">
-              <img
-                src="/images/brand/logo-website.png"
-                alt="Bishorgo Experience Logo"
-                className="w-[180px] sm:w-[220px] lg:w-[290px] h-auto object-contain flex items-center"
-                style={{ maxHeight: "48px" }}
-              />
+            <Link href="/" className="flex items-center gap-3.5 group select-none">
+              {/* SVG Logo mark (Wing, Triangle, Circles) */}
+              <svg className="w-8 h-8 sm:w-9 sm:h-9 flex-shrink-0 group-hover:scale-105 transition-transform duration-300" viewBox="0 0 600 600" fill="none">
+                {/* Wing (Green) */}
+                <path
+                  d="M 133 55 L 135 57 L 135 67 L 137 70 L 140 90 L 151 120 L 160 137 L 181 165 L 199 183 L 225 202 L 247 214 L 262 219 L 266 222 L 281 226 L 282 228 L 256 236 L 228 249 L 199 270 L 175 295 L 163 312 L 147 344 L 132 398 L 133 401 L 131 404 L 132 408 L 172 376 L 272 308 L 285 295 L 293 284 L 301 268 L 300 267 L 304 258 L 308 238 L 308 219 L 301 190 L 293 173 L 276 152 L 245 129 L 235 124 L 231 120 L 158 74 Z"
+                  fill="#014A36"
+                />
+                {/* Triangle Arrow (Gold) */}
+                <path
+                  d="M 143 152 L 143 306 L 218 228 Z"
+                  fill="#C8922B"
+                />
+                {/* Circle 1 (Gold) */}
+                <circle
+                  cx="361.5"
+                  cy="177.5"
+                  r="30.5"
+                  fill="#C8922B"
+                />
+                {/* Circle 2 (Gold) */}
+                <circle
+                  cx="361.5"
+                  cy="285.5"
+                  r="30.5"
+                  fill="#C8922B"
+                />
+              </svg>
+              <div className="flex flex-col text-left">
+                <span className="text-[#014A36] font-extrabold text-[18px] sm:text-[20px] tracking-[0.08em] font-sans leading-none">BISHORGO</span>
+                <span className="text-[#C8922B] text-[8.5px] sm:text-[9.5px] uppercase tracking-[0.22em] mt-1 font-mono leading-none">EXPERIENCE</span>
+              </div>
             </Link>
           </div>
 

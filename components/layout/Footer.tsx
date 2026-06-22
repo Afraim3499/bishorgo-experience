@@ -29,6 +29,18 @@ export const Footer: React.FC = () => {
                 d="M 143 152 L 143 306 L 218 228 Z"
                 fill="#C8922B"
               />
+              <circle
+                cx="361.5"
+                cy="177.5"
+                r="30.5"
+                fill="#C8922B"
+              />
+              <circle
+                cx="361.5"
+                cy="285.5"
+                r="30.5"
+                fill="#C8922B"
+              />
             </svg>
             <div className="flex flex-col text-left">
               <span className="text-white font-extrabold text-[20px] tracking-[0.08em] font-sans leading-none">BISHORGO</span>
