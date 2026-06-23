@@ -40,7 +40,7 @@ export const AuditTeaser: React.FC = () => {
             {/* Copy block */}
             <div className="space-y-2 md:space-y-3">
               <h3 className="text-xl sm:text-2xl lg:text-[28px] font-extrabold tracking-tight font-serif italic text-white select-text">
-                আপনার brand experience কোথায় ভাঙছে, তা জানুন।
+                Discover where your customer's journey is breaking.
               </h3>
               <p className="text-xs sm:text-sm text-[#F8F5EF]/80 font-medium max-w-2xl select-text leading-relaxed">
                 A free Experience Audit helps you see where customers lose interest, where your brand feels unclear, and where the experience can become more memorable.
@@ -55,7 +55,7 @@ export const AuditTeaser: React.FC = () => {
               href="/experience-audit"
               className="inline-flex items-center justify-center bg-[#C8922B] text-[#002f24] hover:bg-[#A87318] hover:text-[#FFFDF8] shadow-[0_4px_12px_rgba(0,0,0,0.15)] transition-all duration-300 font-bold rounded-full px-6 py-3.5 sm:px-8 sm:py-4 text-xs sm:text-sm uppercase tracking-wider group"
             >
-              <span>Book an Experience Audit</span>
+              <span>Your Brand, Our Plan</span>
               <span className="ml-1.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
             </Link>
           </div>

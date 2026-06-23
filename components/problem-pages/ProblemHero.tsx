@@ -73,9 +73,9 @@ export const ProblemHero: React.FC<Props> = ({ problem }) => {
             <div className="flex items-start gap-3 mb-8 max-w-[480px]">
               <span className="text-[#C8922B] text-[42px] leading-[0.6] select-none font-serif">"</span>
               <div className="w-[1px] h-7 bg-[#C8922B]/40 self-stretch mt-1 flex-shrink-0" />
-              <p className="bangla-heading text-[15px] text-[#014A36] font-semibold leading-relaxed">
-                আপনার content দেখা হচ্ছে, কিন্তু মনে থাকছে না। <br />
-                ব্র্যান্ডিংয়ের সমস্যাটা বিজ্ঞাপনে নয়, <span className="text-[#C8922B]">experience</span>-এ।
+              <p className="text-[15px] text-[#014A36] font-semibold leading-relaxed">
+                People see your posts, but they forget them. <br />
+                The real problem is not your ads — it is how your brand makes them <span className="text-[#C8922B]">feel</span>.
               </p>
             </div>
 
@@ -85,7 +85,7 @@ export const ProblemHero: React.FC<Props> = ({ problem }) => {
                 href="/experience-audit"
                 className="inline-flex items-center justify-center gap-2 bg-[#014A36] text-[#FFFDF8] hover:bg-[#002B20] transition-all duration-300 font-bold rounded-xl px-6 py-3.5 text-[15px] shadow-sm"
               >
-                Find the experience gap
+                Your Brand, Our Plan
                 <ArrowUpRight size={16} className="text-[#C8922B]" />
               </Link>
               <a

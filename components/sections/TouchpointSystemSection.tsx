@@ -31,22 +31,21 @@ export const TouchpointSystemSection: React.FC = () => {
           <div className="flex flex-col items-start text-left z-10">
             {/* Small Label */}
             <div className="flex flex-col items-start mb-2.5">
-              <span className="text-[12px] lg:text-[13px] font-semibold text-[#C8922B] select-none font-bangla">
-                আমরা যা করি
+              <span className="text-[12px] lg:text-[13px] font-semibold text-[#C8922B] select-none">
+                What We Do
               </span>
               <div className="w-8 h-[1px] bg-[#C8922B] mt-1" />
             </div>
 
             {/* Headline */}
-            <h2 className="text-[30px] sm:text-[34px] lg:text-[28px] xl:text-[36px] 2xl:text-[42px] font-bold tracking-tight leading-[1.1] text-[#222222] font-bangla select-text">
-              প্রতিটি <span className="text-[#014A36]">touchpoint</span>-কে<br />
-              একটি স্মরণীয় <span className="text-[#014A36]">brand system</span>-এ<br />
-              যুক্ত করি।
+            <h2 className="text-[30px] sm:text-[34px] lg:text-[28px] xl:text-[36px] 2xl:text-[42px] font-bold tracking-tight leading-[1.1] text-[#222222] select-text">
+              We connect every <span className="text-[#014A36]">customer touchpoint</span><br />
+              into one unified, memorable <span className="text-[#014A36]">brand system</span>.
             </h2>
 
             {/* Subheadline */}
-            <p className="text-[14px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] text-[#4F5A55] leading-[1.55] max-w-[520px] mt-3 lg:mt-4 font-bangla select-text">
-              Brand, content, technology আর real-world experience — সবকিছু একসাথে কাজ করলে মানুষ শুধু দেখে না, মনে রাখে।
+            <p className="text-[14px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px] text-[#4F5A55] leading-[1.55] max-w-[520px] mt-3 lg:mt-4 select-text">
+              When brand, content, technology, and real-world experience work together as one, people do not just notice you — they remember you.
             </p>
           </div>
 
@@ -123,7 +122,7 @@ export const TouchpointSystemSection: React.FC = () => {
               <div className="flex flex-col">
                 <h3 className="text-[22px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-bold text-[#014A36] leading-none">Brand</h3>
                 <p className="text-[15px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#222222] font-bangla leading-[1.4] mt-2">
-                  পরিচয় যেটা মনে থাকে।
+                  Creating an identity that people remember.
                 </p>
               </div>
             </div>
@@ -168,7 +167,7 @@ export const TouchpointSystemSection: React.FC = () => {
               <div className="flex flex-col">
                 <h3 className="text-[22px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-bold text-[#014A36] leading-none">Content</h3>
                 <p className="text-[15px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#222222] font-bangla leading-[1.4] mt-2">
-                  গল্পstory যেটা মানুষ connect করে।
+                  Telling stories that people connect with.
                 </p>
               </div>
             </div>
@@ -214,7 +213,7 @@ export const TouchpointSystemSection: React.FC = () => {
               <div className="flex flex-col">
                 <h3 className="text-[22px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-bold text-[#014A36] leading-none">Technology</h3>
                 <p className="text-[15px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#222222] font-bangla leading-[1.4] mt-2">
-                  Digital pathspace যেটা smooth লাগে।
+                  Building digital paths that feel smooth.
                 </p>
               </div>
             </div>
@@ -258,7 +257,7 @@ export const TouchpointSystemSection: React.FC = () => {
               <div className="flex flex-col">
                 <h3 className="text-[22px] lg:text-[18px] xl:text-[20px] 2xl:text-[22px] font-bold text-[#014A36] leading-none">Experience</h3>
                 <p className="text-[15px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#222222] font-bangla leading-[1.4] mt-2">
-                  মুহূর্ত যেটা স্মৃতি হয়ে যায়।
+                  Crafting moments that become memories.
                 </p>
               </div>
             </div>
@@ -284,9 +283,9 @@ export const TouchpointSystemSection: React.FC = () => {
           {/* Left Text */}
           <div className="flex items-start gap-2.5 select-text text-left max-w-xl">
             <span className="w-1.5 h-1.5 rounded-full bg-[#C8922B] mt-2 flex-shrink-0" />
-            <p className="font-bangla text-[15px] lg:text-[14px] xl:text-[16px] text-[#222222] leading-relaxed">
-              আমরা টুকরো টুকরো কাজ করি না।<br />
-              আমরা <span className="text-[#014A36] font-bold">experience</span>-এর পুরো <span className="text-[#014A36] font-bold">যাত্রাপথ</span> design করি।
+            <p className="text-[15px] lg:text-[14px] xl:text-[16px] text-[#222222] leading-relaxed">
+              We do not just do random, piece-by-piece tasks.<br />
+              We design the entire <span className="text-[#014A36] font-bold">customer journey</span> from start to finish.
             </p>
           </div>
 
@@ -296,7 +295,7 @@ export const TouchpointSystemSection: React.FC = () => {
               href="/services"
               className="inline-flex items-center justify-center bg-[#014A36] text-[#FFFDF8] hover:bg-[#002f24] hover:shadow-lg transition-all duration-300 font-semibold rounded-full px-5 py-2.5 text-[13px] lg:text-[14px] group border border-transparent hover:border-[#C8922B]/20"
             >
-              <span>সব services দেখুন</span>
+              <span>Explore all our services</span>
               <span className="ml-1.5 text-[#C8922B] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
             </Link>
           </div>

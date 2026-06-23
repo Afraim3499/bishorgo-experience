@@ -82,8 +82,8 @@ export const Method: React.FC = () => {
             </span>
           </div>
           <h2 className="text-[28px] sm:text-[36px] xl:text-[44px] font-extrabold tracking-tight leading-[1.1] font-serif italic text-forest select-text">
-            Attention থেকে memory পর্যন্ত,<br />
-            আমরা পুরো <span className="not-italic text-gold">journey design</span> করি।
+            From the first look to the lasting memory,<br />
+            we design the whole <span className="not-italic text-gold">customer journey</span>.
           </h2>
           <p className="text-sm md:text-base text-charcoal/80 mt-4 font-medium max-w-2xl select-text leading-relaxed">
             Bishorgo Method helps find where your brand is being forgotten, then turns those weak moments into stronger customer experiences.

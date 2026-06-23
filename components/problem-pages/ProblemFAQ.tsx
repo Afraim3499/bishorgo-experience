@@ -39,7 +39,7 @@ export const ProblemFAQ: React.FC<Props> = ({ faqs, problemLabel }) => {
               href="/experience-audit"
               className="inline-flex items-center gap-2 text-[#014A36] font-bold text-[14px] mt-5 hover:text-[#C8922B] transition-colors duration-200"
             >
-              Book an Audit ↗
+              Your Brand, Our Plan ↗
             </a>
           </motion.div>
 

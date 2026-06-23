@@ -364,8 +364,8 @@ export const LogoLoader: React.FC<LogoLoaderProps> = ({ onComplete, mode = "full
                 <span className="text-[20px] sm:text-[26px] md:text-[32px] uppercase tracking-[0.5em] text-[#E7C77A] font-extrabold mb-2 font-sans">
                   {stage === 0 ? "Imagine" : stage === 1 ? "Watch and Believe" : "Experience"}
                 </span>
-                <span className="text-[16px] sm:text-[19px] md:text-[22px] italic text-[#FFFDF8]/85 font-medium font-bangla mt-1.5">
-                  {stage === 0 ? "ভাবুন" : stage === 1 ? "দেখুন ও বিশ্বাস করুন" : "মনে থাকাটাই আসল জায়গা।"}
+                <span className="text-[16px] sm:text-[19px] md:text-[22px] italic text-[#FFFDF8]/85 font-medium mt-1.5">
+                  {stage === 0 ? "Let your mind wander" : stage === 1 ? "Watch your ideas come to life" : "Make a mark that lasts"}
                 </span>
               </motion.div>
             </AnimatePresence>

@@ -47,7 +47,7 @@ export const IndustryFinalCTA: React.FC<Props> = ({ industryLabel }) => {
             href="/experience-audit"
             className="inline-flex items-center justify-center gap-2 bg-[#C8922B] text-[#014A36] hover:bg-[#FFFDF8] hover:text-[#014A36] transition-all duration-300 font-bold rounded-xl px-8 py-4 text-[14px] shadow-sm tracking-wider uppercase"
           >
-            Book an Experience Audit
+            Your Brand, Our Plan
             <ArrowUpRight size={15} />
           </Link>
           <Link

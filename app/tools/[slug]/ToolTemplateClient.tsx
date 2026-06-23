@@ -199,7 +199,7 @@ export const ToolTemplateClient: React.FC<Props> = ({ slug }) => {
                       href="/experience-audit"
                       className="flex-1 bg-[#C8922B] text-[#014A36] hover:bg-[#A87318] hover:text-[#FFFDF8] py-4 rounded-xl font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-1"
                     >
-                      <span>Book Detailed Audit</span>
+                      <span>Your Brand, Our Plan</span>
                       <ArrowRight size={14} />
                     </Link>
                   </div>
@@ -293,7 +293,7 @@ export const ToolTemplateClient: React.FC<Props> = ({ slug }) => {
                       href="/experience-audit"
                       className="flex-1 bg-[#C8922B] text-[#014A36] hover:bg-[#A87318] hover:text-[#FFFDF8] py-4 rounded-xl font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-1"
                     >
-                      <span>Get Detailed Audit Report</span>
+                      <span>Your Brand, Our Plan</span>
                       <ArrowRight size={14} />
                     </Link>
                   </div>

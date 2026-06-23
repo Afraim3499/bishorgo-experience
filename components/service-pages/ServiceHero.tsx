@@ -64,9 +64,9 @@ export const ServiceHero: React.FC<Props> = ({ service }) => {
             <div className="flex items-start gap-3 mb-8 max-w-[480px]">
               <span className="text-[#C8922B] text-[42px] leading-[0.6] select-none font-serif">"</span>
               <div className="w-[1px] h-7 bg-[#C8922B]/40 self-stretch mt-1 flex-shrink-0" />
-              <p className="bangla-heading text-[15px] text-[#014A36] font-semibold leading-relaxed">
-                মানুষ সব বিজ্ঞাপন মনে রাখে না।<br />
-                কিন্তু একটা ভালো <span className="text-[#C8922B]">experience</span> মনে থেকে যায়।
+              <p className="text-[15px] text-[#014A36] font-semibold leading-relaxed">
+                People forget ads they see every day.<br />
+                But they never forget a moment that made them feel special.
               </p>
             </div>
 
@@ -76,7 +76,7 @@ export const ServiceHero: React.FC<Props> = ({ service }) => {
                 href="/experience-audit"
                 className="inline-flex items-center justify-center gap-2 bg-[#014A36] text-[#FFFDF8] hover:bg-[#002B20] transition-all duration-300 font-bold rounded-xl px-6 py-3.5 text-[15px] shadow-sm"
               >
-                Book an Experience Audit
+                Your Brand, Our Plan
                 <ArrowUpRight size={16} className="text-[#C8922B]" />
               </Link>
               <Link

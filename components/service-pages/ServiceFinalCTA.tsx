@@ -46,7 +46,7 @@ export const ServiceFinalCTA: React.FC<Props> = ({ serviceLabel }) => {
                 href="/experience-audit"
                 className="inline-flex items-center justify-center gap-2 bg-[#C8922B] text-[#002B20] hover:bg-[#E7C77A] transition-all duration-300 font-bold rounded-xl px-7 py-4 text-[16px] shadow-[0_4px_20px_rgba(200,146,43,0.30)]"
               >
-                Book an Experience Audit
+                Your Brand, Our Plan
                 <ArrowUpRight size={17} strokeWidth={2.5} />
               </Link>
               <Link

@@ -63,7 +63,7 @@ export const ServiceUseCases: React.FC<Props> = ({ useCases }) => {
             href="/experience-audit"
             className="inline-flex items-center gap-2 bg-[#014A36] text-[#FFFDF8] hover:bg-[#002B20] transition-colors duration-300 font-bold rounded-xl px-5 py-3 text-[14px] flex-shrink-0"
           >
-            Book an Audit ↗
+            Your Brand, Our Plan ↗
           </a>
         </motion.div>
 

@@ -85,7 +85,7 @@ export const Header: React.FC = () => {
               href="/experience-audit"
               className="inline-flex items-center justify-center bg-[#014A36] text-[#FFFDF8] hover:bg-[#002f24] transition-all duration-300 font-semibold rounded-full px-[28px] py-[16px] text-[15px] group border border-transparent hover:border-[#C8922B]/20"
             >
-              <span>Book Audit</span>
+              <span>Your Brand, Our Plan</span>
               <span className="ml-1.5 text-[#C8922B] transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
             </Link>
           </div>
@@ -130,7 +130,7 @@ export const Header: React.FC = () => {
                   onClick={() => setIsOpen(false)}
                   className="w-full inline-flex items-center justify-center bg-[#014A36] text-[#FFFDF8] hover:bg-[#002f24] py-4 rounded-full font-semibold transition-colors"
                 >
-                  <span>Book Audit ↗</span>
+                  <span>Your Brand, Our Plan ↗</span>
                 </Link>
               </div>
             </div>

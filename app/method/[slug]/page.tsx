@@ -29,7 +29,7 @@ const phases: PhaseDetail[] = [
     slug: "discover",
     number: "01",
     title: "Discover Phase",
-    subtitle: "শুরুতেই আমরা কাস্টমার জার্নির ফাঁকফোকরগুলো খুঁজে বের করি।",
+    subtitle: "First, we search for the hidden gaps in your customer's journey.",
     overview: "In the Discover phase, we conduct deep operational and digital audits. We analyze target audience behaviors, measure web page speeds under local latency, examine chat scripts, and inspect delivery packaging.",
     whyItMatters: "Most brands spend budget on marketing campaigns without realizing that their conversion funnel is leaking leads. Discovering these friction points first prevents wasted ad spends.",
     actions: [
@@ -52,7 +52,7 @@ const phases: PhaseDetail[] = [
     slug: "define",
     number: "02",
     title: "Define Phase",
-    subtitle: "ব্র্যান্ডের মূল মেসেজ এবং কাস্টমারকে কী ফিলিং দেবো তা নির্ধারণ করি।",
+    subtitle: "Next, we figure out your brand's true voice and the feelings we want to give your customers.",
     overview: "In the Define phase, we establish a unified brand position and message architecture. We define your brand promise, brand tone of voice, visual direction, and sensory goals.",
     whyItMatters: "Without defining strategic pillars, businesses post random templates, run disconnected campaigns, and compete only on price. Defining positioning builds instant recall.",
     actions: [
@@ -75,7 +75,7 @@ const phases: PhaseDetail[] = [
     slug: "design",
     number: "03",
     title: "Design Phase",
-    subtitle: "আমরা ওয়েবসাইট কোড, ভিজ্যুয়াল সিস্টেম এবং প্রিমিয়াম প্যাকেজিং ডিজাইন করি।",
+    subtitle: "Then, we build your fast website, design your logos, and craft your premium packages.",
     overview: "In the Design phase, we build the actual customer touchpoints. We code custom high-speed Next.js storefronts, design logo systems, plan content schedules, and layout premium packaging.",
     whyItMatters: "Design is where strategy becomes visible. Visual beauty must work hand-in-hand with fast, smooth digital performance to build customer trust.",
     actions: [
@@ -98,7 +98,7 @@ const phases: PhaseDetail[] = [
     slug: "deliver",
     number: "04",
     title: "Deliver Phase",
-    subtitle: "লাইভ লঞ্চ, ক্যাম্পেইন রান এবং প্রিমিয়াম সলিউশন ডেলিভারি।",
+    subtitle: "After that, we launch your new look to the world and deliver premium setups.",
     overview: "In the Deliver phase, we deploy your custom web systems, launch marketing campaigns, and print and distribute physical branding packaging.",
     whyItMatters: "Execution is everything. Seamless launch ensures that your first impression builds trust and commands immediate value.",
     actions: [
@@ -120,7 +120,7 @@ const phases: PhaseDetail[] = [
     slug: "deepen",
     number: "05",
     title: "Deepen Phase",
-    subtitle: "গ্রাহকের ফিডব্যাক এবং কনভার্সন এনালাইসিস করে রিলেশন স্ট্রং করি।",
+    subtitle: "Finally, we listen to your customers and make the bond even stronger over time.",
     overview: "In the Deepen phase, we monitor user metrics, track cart abandonment reasons, collect unboxing stories, and optimize workflows.",
     whyItMatters: "Growth isn't a one-time launch. Continuous testing and improvement build customer loyalty and drive repeat visits.",
     actions: [
@@ -338,7 +338,7 @@ export default async function MethodSlugPage({
             href="/experience-audit"
             className="inline-flex items-center justify-center bg-[#C8922B] hover:bg-[#A87318] text-[#014A36] hover:text-[#FFFDF8] px-8 py-4.5 rounded-full font-semibold transition-all duration-300 shadow-lg shadow-[#C8922B]/10 text-[15px] group"
           >
-            <span>Book an Experience Audit</span>
+            <span>Your Brand, Our Plan</span>
             <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>

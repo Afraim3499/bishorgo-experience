@@ -23,7 +23,7 @@ export const auditSubpages: AuditPageBlueprint[] = [
   {
     slug: "brand-audit",
     label: "Brand Experience Audit",
-    title: "আপনার ব্র্যান্ডের গল্প এবং রিকল ভ্যালু পরীক্ষা করুন।",
+    title: "See if your brand story is easy to remember.",
     subtitle: "Verify if your core brand message is memorable, or if you are getting lost in social media noise.",
     description: "We audit your brand story, tone of voice, visual templates, and differentiator clarity to find why customers ask about prices but forget your name.",
     scope: [
@@ -44,7 +44,7 @@ export const auditSubpages: AuditPageBlueprint[] = [
   {
     slug: "website-audit",
     label: "Website Experience Audit",
-    title: "আপনার ওয়েবসাইটের কনভার্সন এবং স্পিড অডিট করুন।",
+    title: "Find out why visitors leave your website without buying.",
     subtitle: "Identify why your website has traffic but checkout carts and lead forms remain empty.",
     description: "We perform deep checks on mobile loading times, layout shifts, form fields friction, checkout gates, and navigation layout clarity.",
     scope: [
@@ -65,7 +65,7 @@ export const auditSubpages: AuditPageBlueprint[] = [
   {
     slug: "social-media-audit",
     label: "Social Media Experience Audit",
-    title: "সোশ্যাল মিডিয়া পেজের কন্টেন্ট এবং এনগেজমেন্ট অডিট।",
+    title: "See why your social media posts are being scrolled past.",
     subtitle: "Audit why your social media page updates fail to capture attention and build active recall.",
     description: "We review your content pillars, visual templates, comment reply scripts, and campaign consistency to help you stop boosting generic posts.",
     scope: [
@@ -86,7 +86,7 @@ export const auditSubpages: AuditPageBlueprint[] = [
   {
     slug: "customer-journey-audit",
     label: "Customer Journey Audit",
-    title: "পুরো কাস্টমার জার্নির টাচপয়েন্ট এবং কানেকশন চেক।",
+    title: "Trace every step your customer takes with your brand.",
     subtitle: "Locate the exact friction points currently breaking trust between discovery, checkout, and unboxing.",
     description: "We map out every single customer interaction point — online ads, websites, chat boxes, delivery rider calls, packaging details, and follow-ups.",
     scope: [
@@ -107,7 +107,7 @@ export const auditSubpages: AuditPageBlueprint[] = [
   {
     slug: "local-business-audit",
     label: "Local Business Experience Audit",
-    title: "লোকাল শপ বা রেস্টুরেন্টের কাস্টমার এক্সপেরিয়েন্স অডিট।",
+    title: "Discover why local customers are not returning to your shop.",
     subtitle: "Identify where your local retail shop, cafe, or restaurant loses repeat customer visits.",
     description: "We evaluate neighborhood maps profile, storefront signs, layout navigation, table greetings, menu clarity, and cashier checkout comfort.",
     scope: [
@@ -128,7 +128,7 @@ export const auditSubpages: AuditPageBlueprint[] = [
   {
     slug: "startup-audit",
     label: "Startup Brand Experience Audit",
-    title: "স্টার্টআপ লঞ্চ এবং কাস্টমার অনবোর্ডিং অডিট।",
+    title: "Make sure your new startup onboarding feels smooth and clear.",
     subtitle: "Verify if your new startup is validated clearly, or if landing and onboarding paths confuse users.",
     description: "We review MVP landing pages, registration forms, onboarding cycles, product visual kits, and value propositions.",
     scope: [

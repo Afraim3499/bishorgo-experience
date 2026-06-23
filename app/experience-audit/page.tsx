@@ -8,14 +8,14 @@ import { Check, ShieldAlert, Sparkles, Zap, Activity } from "lucide-react";
 export const metadata: Metadata = {
   title: "Experience Audit — Bishorgo Experience",
   description:
-    "আপনার brand experience কোথায় ভাঙছে, তা জানুন। Get a free, detailed Experience Audit from Bishorgo covering brand alignment, web speed, and unboxing loops.",
+    "Find out where your brand experience is breaking. Get a free, detailed Experience Audit from Bishorgo covering brand alignment, web speed, and unboxing loops.",
   alternates: {
     canonical: "/experience-audit",
   },
   openGraph: {
     title: "Experience Audit — Bishorgo Experience",
     description:
-      "আপনার brand experience কোথায় ভাঙছে, তা জানুন। Get a free, detailed Experience Audit from Bishorgo covering brand alignment, web speed, and unboxing loops.",
+      "Find out where your brand experience is breaking. Get a free, detailed Experience Audit from Bishorgo covering brand alignment, web speed, and unboxing loops.",
     url: "https://bishorgoexperience.com/experience-audit",
     images: [
       {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Experience Audit — Bishorgo Experience",
     description:
-      "আপনার brand experience কোথায় ভাঙছে, তা জানুন। Get a free, detailed Experience Audit from Bishorgo covering brand alignment, web speed, and unboxing loops.",
+      "Find out where your brand experience is breaking. Get a free, detailed Experience Audit from Bishorgo covering brand alignment, web speed, and unboxing loops.",
     images: ["/images/brand/og-image.jpg"],
   },
 };
@@ -81,7 +81,7 @@ export default function ExperienceAuditPage() {
             FREE DIAGNOSTIC
           </span>
           <h1 className="text-4xl md:text-6.5xl lg:text-8xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight mb-8">
-            আপনার brand experience কোথায় ভাঙছে, তা জানুন।
+            Find out where your brand experience is breaking.
           </h1>
           <p className="text-base md:text-xl text-[#FFFDF8]/80 leading-relaxed font-medium max-w-3xl mx-auto">
             A free Experience Audit helps you see where your brand's digital presence, website speed, checkout flow, and physical unboxing is losing customers — and how to fix it.

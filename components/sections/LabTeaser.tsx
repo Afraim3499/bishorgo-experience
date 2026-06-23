@@ -26,9 +26,9 @@ export const LabTeaser: React.FC = () => {
             </div>
             
             <h2 className="text-2xl sm:text-3xl xl:text-4xl font-extrabold tracking-tight leading-[1.1] font-serif italic text-forest select-text">
-              আমরা চিন্তা করি, পরীক্ষা করি,<br />
-              মানুষের অভিজ্ঞতা<br />
-              নতুনভাবে দেখি।
+              We think, we test,<br />
+              and we reshape how<br />
+              people feel.
             </h2>
             
             <p className="text-xs xl:text-sm text-charcoal/70 leading-relaxed font-medium select-text">

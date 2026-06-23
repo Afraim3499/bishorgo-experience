@@ -197,7 +197,7 @@ export default async function GlossarySlugPage({
             href="/experience-audit"
             className="inline-flex items-center justify-center bg-[#C8922B] hover:bg-[#A87318] text-[#014A36] hover:text-[#FFFDF8] px-8 py-4.5 rounded-full font-semibold transition-all duration-300 shadow-lg shadow-[#C8922B]/10 text-[15px] group"
           >
-            <span>Book an Experience Audit</span>
+            <span>Your Brand, Our Plan</span>
             <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>

@@ -7,14 +7,14 @@ import { ArrowRight, Star } from "lucide-react";
 export const metadata: Metadata = {
   title: "Experience Lab — Bishorgo Experience",
   description:
-    "আমরা চিন্তা করি, পরীক্ষা করি, মানুষের অভিজ্ঞতা নতুনভাবে দেখি। Read our latest breakdowns, cognitive psychology analyses, and brand unboxing experience experiments.",
+    "We think, we test, and we reshape how people feel. Read our latest breakdowns, cognitive psychology analyses, and brand unboxing experience experiments.",
   alternates: {
     canonical: "/experience-lab",
   },
   openGraph: {
     title: "Experience Lab — Bishorgo Experience",
     description:
-      "আমরা চিন্তা করি, পরীক্ষা করি, মানুষের অভিজ্ঞতা নতুনভাবে দেখি। Read our latest breakdowns, cognitive psychology analyses, and brand unboxing experience experiments.",
+      "We think, we test, and we reshape how people feel. Read our latest breakdowns, cognitive psychology analyses, and brand unboxing experience experiments.",
     url: "https://bishorgoexperience.com/experience-lab",
     images: [
       {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Experience Lab — Bishorgo Experience",
     description:
-      "আমরা চিন্তা করি, পরীক্ষা করি, মানুষের অভিজ্ঞতা নতুনভাবে দেখি। Read our latest breakdowns, cognitive psychology analyses, and brand unboxing experience experiments.",
+      "We think, we test, and we reshape how people feel. Read our latest breakdowns, cognitive psychology analyses, and brand unboxing experience experiments.",
     images: ["/images/brand/og-image.jpg"],
   },
 };
@@ -54,7 +54,7 @@ export default function ExperienceLabPage() {
             <Star size={10} className="fill-[#C8922B]" /> BISHORGO EXPERIENCE LAB
           </span>
           <h1 className="text-4xl md:text-6.5xl lg:text-8xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight mb-8">
-            আমরা চিন্তা করি, পরীক্ষা করি, মানুষের অভিজ্ঞতা নতুনভাবে দেখি।
+            We think, we test, and we reshape how people feel.
           </h1>
           <p className="text-base md:text-xl text-[#FFFDF8]/80 leading-relaxed font-medium max-w-3xl mx-auto">
             The Experience Lab is our research hub. We study local customer psychology, analyze real-world activations, tear down digital checkout flows, and design actionable blueprints for Bangladeshi brands.
@@ -86,7 +86,7 @@ export default function ExperienceLabPage() {
             href="/experience-audit"
             className="inline-flex items-center justify-center bg-[#C8922B] hover:bg-[#A87318] text-[#014A36] hover:text-[#FFFDF8] px-8 py-4.5 rounded-full font-semibold transition-all duration-300 shadow-lg shadow-[#C8922B]/10 text-[15px] group"
           >
-            <span>Request My Experience Audit</span>
+            <span>Your Brand, Our Plan</span>
             <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>

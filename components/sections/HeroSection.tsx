@@ -45,7 +45,7 @@ export const HeroSection: React.FC = () => {
                 href="/experience-audit"
                 className="bg-[#014A36] text-[#FFFDF8] hover:bg-[#002f24] hover:shadow-lg transition-all duration-300 font-semibold rounded-xl px-5.5 py-3 lg:px-6.5 lg:py-3.5 text-[14px] lg:text-[15px] flex items-center justify-center gap-1.5 shadow-sm"
               >
-                <span>Book an Experience Audit</span>
+                <span>Your Brand, Our Plan</span>
                 <span className="text-[#C8922B] font-bold">↗</span>
               </Link>
               <Link
@@ -66,9 +66,9 @@ export const HeroSection: React.FC = () => {
               <div className="w-[1px] h-7 bg-[#C8922B]/40 self-stretch mt-1" />
               
               {/* Quote text */}
-              <p className="bangla-heading text-[15px] lg:text-[15px] xl:text-[17px] leading-relaxed text-[#222222] font-semibold tracking-wide">
-                মানুষ সব বিজ্ঞাপন মনে রাখে না।<br />
-                কিন্তু একটা ভালো <span className="text-[#014A36] font-semibold">experience</span> মনে থেকে যায়।
+              <p className="text-[15px] lg:text-[15px] xl:text-[17px] leading-relaxed text-[#222222] font-semibold tracking-wide">
+                People forget ads they see every day.<br />
+                But they never forget a moment that made them feel special.
               </p>
             </div>
           </div>
@@ -158,7 +158,7 @@ export const HeroSection: React.FC = () => {
             </div>
 
             {/* Floating Visual Cards - Placed further out to avoid overlap with logo watermark */}
-            {/* Card 1: সংযোগ (Upper-Left) */}
+            {/* Card 1: Connect (Upper-Left) */}
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
@@ -171,10 +171,10 @@ export const HeroSection: React.FC = () => {
                   <circle cx="12" cy="12" r="1.5" fill="currentColor" />
                 </svg>
               </div>
-              <span className="text-[15px] lg:text-[15px] xl:text-[16px] font-semibold text-[#222222] font-bangla tracking-wide">সংযোগ</span>
+              <span className="text-[15px] lg:text-[15px] xl:text-[16px] font-semibold text-[#222222] tracking-wide">Connect</span>
             </motion.div>
 
-            {/* Card 2: স্মৃতি (Mid-Right) */}
+            {/* Card 2: Remember (Mid-Right) */}
             <motion.div
               animate={{ y: [0, 6, 0] }}
               transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
@@ -185,10 +185,10 @@ export const HeroSection: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.5a6 6 0 0 1-6-6 4 4 0 0 1 4-4 2 2 0 0 1 2 2M12 18.5a6 6 0 0 0 6-6 4 4 0 0 0-4-4 2 2 0 0 0-2 2M12 18.5V8.5" />
                 </svg>
               </div>
-              <span className="text-[15px] lg:text-[15px] xl:text-[16px] font-semibold text-[#222222] font-bangla tracking-wide">স্মৃতি</span>
+              <span className="text-[15px] lg:text-[15px] xl:text-[16px] font-semibold text-[#222222] tracking-wide">Remember</span>
             </motion.div>
 
-            {/* Card 3: অনুভব (Lower-Left/Mid - Moved further out and down-left) */}
+            {/* Card 3: Feel (Lower-Left/Mid - Moved further out and down-left) */}
             <motion.div
               animate={{ y: [0, -5, 0] }}
               transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
@@ -199,7 +199,7 @@ export const HeroSection: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg>
               </div>
-              <span className="text-[15px] lg:text-[15px] xl:text-[16px] font-semibold text-[#222222] font-bangla tracking-wide">অনুভব</span>
+              <span className="text-[15px] lg:text-[15px] xl:text-[16px] font-semibold text-[#222222] tracking-wide">Feel</span>
             </motion.div>
 
           </div>

@@ -200,7 +200,7 @@ export const LabClient: React.FC = () => {
                   onClick={handleCloseArticle}
                   className="inline-flex items-center justify-center bg-[#014A36] hover:bg-[#002f24] text-[#FFFDF8] px-6 py-3 rounded-full font-semibold text-xs transition-colors"
                 >
-                  Request an Experience Audit
+                  Your Brand, Our Plan
                 </Link>
               </div>
 

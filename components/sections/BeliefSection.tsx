@@ -32,25 +32,24 @@ export const BeliefSection: React.FC = () => {
           >
             {/* Small Label */}
             <div className="flex flex-col items-start mb-3 lg:mb-4">
-              <span className="text-[15px] lg:text-[16px] font-medium tracking-[0.08em] text-[#C8922B] font-bangla">
-                আমাদের বিশ্বাস
+              <span className="text-[15px] lg:text-[16px] font-medium tracking-[0.08em] text-[#C8922B]">
+                What We Believe
               </span>
               <div className="w-[40px] lg:w-[48px] h-[2.5px] bg-[#C8922B] mt-1" />
             </div>
 
             {/* Bangla Headline */}
-            <h2 className="bangla-heading text-[34px] sm:text-[40px] lg:text-[36px] xl:text-[44px] 2xl:text-[52px] font-bold tracking-tight leading-[1.1] text-[#F8F5EF] select-text">
-              আমরা শুধু<br />
-              নজরে আনতে চাই না,<br />
-              আমরা <span className="text-[#C8922B]">মনে থাকার</span><br />
-              মতো <span className="text-[#C8922B]">অভিজ্ঞতা</span><br />
-              তৈরি করি।
+            <h2 className="text-[34px] sm:text-[40px] lg:text-[36px] xl:text-[44px] 2xl:text-[52px] font-bold tracking-tight leading-[1.1] text-[#F8F5EF] select-text">
+              We do not just <br />
+              want to be noticed. <br />
+              We shape <span className="text-[#C8922B]">moments</span> <br />
+              that people <span className="text-[#C8922B]">remember</span>.
             </h2>
 
             {/* Supporting Line */}
-            <p className="bangla-text text-[17px] sm:text-[19px] lg:text-[17px] xl:text-[19px] text-ivory/80 leading-[1.55] max-w-[500px] mt-4 lg:mt-5 select-text">
-              বিজ্ঞাপন মনোযোগ পেতে পারে,<br />
-              কিন্তু অভিজ্ঞতাই মানুষের মনে জায়গা করে নেয়।
+            <p className="text-[17px] sm:text-[19px] lg:text-[17px] xl:text-[19px] text-ivory/80 leading-[1.55] max-w-[500px] mt-4 lg:mt-5 select-text">
+              Ads can get a quick look, <br />
+              but experiences build real relationships.
             </p>
 
             {/* Quote Block */}
@@ -62,9 +61,9 @@ export const BeliefSection: React.FC = () => {
               <div className="w-[1px] h-9 bg-[#C8922B]/40 self-stretch mt-1" />
               
               {/* Quote Text */}
-              <p className="bangla-text text-[15px] lg:text-[16px] xl:text-[17px] leading-relaxed text-[#F8F5EF] font-medium tracking-wide">
-                মানুষ সব বিজ্ঞাপন মনে রাখে না।<br />
-                কিন্তু একটা ভালো <span className="text-[#C8922B] font-semibold">experience</span> মনে থেকে যায়।
+              <p className="text-[15px] lg:text-[16px] xl:text-[17px] leading-relaxed text-[#F8F5EF] font-medium tracking-wide">
+                People forget ads they see every day.<br />
+                But they never forget a moment that made them feel special.
               </p>
             </div>
           </motion.div>
@@ -93,13 +92,13 @@ export const BeliefSection: React.FC = () => {
               
               {/* Content */}
               <div className="flex flex-col text-left">
-                <h3 className="bangla-heading text-[20px] sm:text-[22px] lg:text-[20px] xl:text-[24px] font-bold text-[#F8F5EF] leading-[1.25] select-text">
-                  মানুষ <span className="text-[#C8922B]">যুক্তি</span> দিয়ে কেনে,<br />
-                  কিন্তু <span className="text-[#C8922B]">অনুভূতি</span> দিয়ে <span className="text-[#C8922B]">মনে রাখে</span>।
+                <h3 className="text-[20px] sm:text-[22px] lg:text-[20px] xl:text-[24px] font-bold text-[#F8F5EF] leading-[1.25] select-text">
+                  People buy with logic,<br />
+                  but they remember you with <span className="text-[#C8922B]">how they felt</span>.
                 </h3>
-                <p className="bangla-text text-[14px] sm:text-[15px] lg:text-[14px] xl:text-[15px] text-ivory/75 leading-[1.6] mt-2 select-text">
-                  ফিচার, অফার, ডিসকাউন্ট—সবকিছু একসময় ভুলে যায়।<br />
-                  কিন্তু কেমন অনুভব করেছিল, সেটা মানুষ সহজে ভুলে না।
+                <p className="text-[14px] sm:text-[15px] lg:text-[14px] xl:text-[15px] text-ivory/75 leading-[1.6] mt-2 select-text">
+                  Offers, features, and sales fade away.<br />
+                  But a customer will always remember how easy and pleasant you made their day.
                 </p>
               </div>
             </motion.div>
@@ -128,13 +127,13 @@ export const BeliefSection: React.FC = () => {
               
               {/* Content */}
               <div className="flex flex-col text-left">
-                <h3 className="bangla-heading text-[20px] sm:text-[22px] lg:text-[20px] xl:text-[24px] font-bold text-[#F8F5EF] leading-[1.25] select-text">
-                  ব্র্যান্ডের আসল <span className="text-[#C8922B]">পরিচয়</span><br />
-                  তার <span className="text-[#C8922B]">অভিজ্ঞতায়</span>।
+                <h3 className="text-[20px] sm:text-[22px] lg:text-[20px] xl:text-[24px] font-bold text-[#F8F5EF] leading-[1.25] select-text">
+                  Your brand's real face<br />
+                  is the <span className="text-[#C8922B]">experience</span> you deliver.
                 </h3>
-                <p className="bangla-text text-[14px] sm:text-[15px] lg:text-[14px] xl:text-[15px] text-ivory/75 leading-[1.6] mt-2 select-text">
-                  লোগো, কালার, পোস্ট—এসব পরিচয় তৈরি করে।<br />
-                  কিন্তু অভিজ্ঞতাই সেই পরিচয়কে স্মৃতিতে পরিণত করে।
+                <p className="text-[14px] sm:text-[15px] lg:text-[14px] xl:text-[15px] text-ivory/75 leading-[1.6] mt-2 select-text">
+                  Logos, colors, and social posts are just the cover.<br />
+                  The actual experience is what turns those details into a memory.
                 </p>
               </div>
             </motion.div>
@@ -163,13 +162,13 @@ export const BeliefSection: React.FC = () => {
               
               {/* Content */}
               <div className="flex flex-col text-left">
-                <h3 className="bangla-heading text-[20px] sm:text-[22px] lg:text-[20px] xl:text-[24px] font-bold text-[#F8F5EF] leading-[1.25] select-text">
-                  প্রতিটি <span className="text-[#C8922B]">সংযোগই</span><br />
-                  <span className="text-[#C8922B]">স্মৃতি</span> তৈরির <span className="text-[#C8922B]">সুযোগ</span>।
+                <h3 className="text-[20px] sm:text-[22px] lg:text-[20px] xl:text-[24px] font-bold text-[#F8F5EF] leading-[1.25] select-text">
+                  Every single touchpoint<br />
+                  is a <span className="text-[#C8922B]">chance to build trust</span>.
                 </h3>
-                <p className="bangla-text text-[14px] sm:text-[15px] lg:text-[14px] xl:text-[15px] text-ivory/75 leading-[1.6] mt-2 select-text">
-                  আপনার গ্রাহক যতবার আপনার সাথে ইন্টারঅ্যাক্ট করে,<br />
-                  ততবার আপনার ব্র্যান্ড মনে থাকার একটি নতুন সুযোগ তৈরি হয়।
+                <p className="text-[14px] sm:text-[15px] lg:text-[14px] xl:text-[15px] text-ivory/75 leading-[1.6] mt-2 select-text">
+                  Every time a user visits your website or chats with your support,<br />
+                  you have a golden chance to make a friend for life.
                 </p>
               </div>
             </motion.div>

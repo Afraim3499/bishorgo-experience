@@ -90,7 +90,7 @@ export const FinalCTA: React.FC = () => {
               variant="primary"
               className="bg-gold border-gold text-charcoal hover:bg-transparent hover:text-gold hover:border-gold transition-bezier h-11 lg:h-9 xl:h-10 text-xs uppercase tracking-wider px-6 lg:px-5 xl:px-8"
             >
-              Book an Experience Audit
+              Your Brand, Our Plan
             </Button>
             <Button
               href="/contact"

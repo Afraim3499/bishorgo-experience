@@ -117,8 +117,8 @@ export const Belief: React.FC = () => {
             <div className="absolute top-0 right-0 w-24 h-24 bg-gold/5 rounded-bl-full pointer-events-none" />
             <div className="space-y-2">
               <span className="text-[8px] uppercase tracking-widest text-gold font-bold block font-mono">Dialogue // Subtitle</span>
-              <h3 className="text-xl md:text-2xl font-extrabold bangla-text leading-tight tracking-wide text-ivory">
-                মনে থাকাটাই আসল জায়গা।
+              <h3 className="text-xl md:text-2xl font-extrabold leading-tight tracking-wide text-ivory">
+                To be remembered is what really matters.
               </h3>
               <p className="text-xs text-ivory/70 leading-relaxed font-medium max-w-md">
                 In Dhaka, you don't grow by shouting louder. You grow by staying inside their minds.

@@ -181,7 +181,7 @@ export default async function ChecklistSlugPage({
                   href="/experience-audit"
                   className="text-xs font-mono font-bold uppercase text-[#C8922B] hover:text-[#FFFDF8] flex items-center gap-1 transition-colors"
                 >
-                  <span>Book Experience Audit</span>
+                  <span>Your Brand, Our Plan</span>
                   <ArrowRight size={12} />
                 </Link>
               </div>

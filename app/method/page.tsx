@@ -9,14 +9,14 @@ import { Compass, FileText, LayoutTemplate, Send, Eye, Star, ArrowRight } from "
 export const metadata: Metadata = {
   title: "The Bishorgo Method — Bishorgo Experience",
   description:
-    "Attention থেকে memory পর্যন্ত, আমরা পুরো journey design করি। Learn about our 5-step method: Discover, Define, Design, Deliver, and Deepen.",
+    "From the first look to the lasting memory, we design the whole journey. Learn about our 5-step method: Discover, Define, Design, Deliver, and Deepen.",
   alternates: {
     canonical: "/method",
   },
   openGraph: {
     title: "The Bishorgo Method — Bishorgo Experience",
     description:
-      "Attention থেকে memory পর্যন্ত, আমরা পুরো journey design করি। Learn about our 5-step method: Discover, Define, Design, Deliver, and Deepen.",
+      "From the first look to the lasting memory, we design the whole journey. Learn about our 5-step method: Discover, Define, Design, Deliver, and Deepen.",
     url: "https://bishorgoexperience.com/method",
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Bishorgo Method — Bishorgo Experience",
     description:
-      "Attention থেকে memory পর্যন্ত, আমরা পুরো journey design করি। Learn about our 5-step method: Discover, Define, Design, Deliver, and Deepen.",
+      "From the first look to the lasting memory, we design the whole journey. Learn about our 5-step method: Discover, Define, Design, Deliver, and Deepen.",
     images: ["/images/brand/og-image.jpg"],
   },
 };
@@ -74,8 +74,8 @@ export default function MethodPage() {
           </span>
           
           <h1 className="text-4xl md:text-6xl lg:text-7.5xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight mb-8 font-sans">
-            Attention থেকে <span className="text-[#C8922B]">memory</span> পর্যন্ত,<br />
-            আমরা পুরো journey design করি।
+            From the first look to the <span className="text-[#C8922B]">lasting memory</span>,<br />
+            we design the whole journey.
           </h1>
           
           <p className="text-base md:text-xl text-[#FFFDF8]/85 leading-relaxed font-medium max-w-3xl mx-auto mb-10">
@@ -87,7 +87,7 @@ export default function MethodPage() {
               href="/experience-audit"
               className="w-full sm:w-auto inline-flex items-center justify-center bg-[#C8922B] hover:bg-[#A87318] text-[#014A36] hover:text-[#FFFDF8] px-8 py-4.5 rounded-full font-semibold transition-all duration-300 shadow-lg shadow-[#C8922B]/10 group text-[15px]"
             >
-              <span>Audit Your Brand Journey</span>
+              <span>Your Brand, Our Plan</span>
               <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
             </Link>
             <a
@@ -214,7 +214,7 @@ export default function MethodPage() {
             href="/experience-audit"
             className="inline-flex items-center justify-center bg-[#C8922B] hover:bg-[#A87318] text-[#014A36] hover:text-[#FFFDF8] px-8 py-4.5 rounded-full font-semibold transition-all duration-300 shadow-lg shadow-[#C8922B]/10 text-[15px] group"
           >
-            <span>Get a Free Experience Audit</span>
+            <span>Your Brand, Our Plan</span>
             <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>
