@@ -175,6 +175,46 @@ export const labArticles: LabArticle[] = [
     slug: "bangladesh-local-business-branding-mistakes",
     banglaHook: "ভুল জায়গায় টাকা খরচ না করে, কাস্টমার সার্ভিসের মান আর প্যাকেজিং সুন্দর করুন।",
     content: "scaling local brands often commit five major experience mistakes: 1) Spending on ads before clarifying their core brand message. 2) Using random visual templates, breaking visual recall. 3) Forgetting Google Maps neighborhood presence. 4) Using late automated chat replies. 5) handover items in plain plastic bags. Fix these gaps first to build trusted growth."
+  },
+  {
+    id: "psychology-of-bhai-script",
+    title: "The psychology of the 'Bhai' script: Human conversations in commerce",
+    category: "Brand Psychology",
+    summary: "Why standard automated chat replies feel cold to Bangladeshi shoppers, and how local brands can build genuine, warm communication playbooks.",
+    readTime: "5 min read",
+    date: "June 22, 2026",
+    slug: "psychology-of-bhai-script",
+    content: "When a customer sends a message on Facebook to buy a product, they are not looking for an automated machine. In Bangladesh, calling someone 'Bhai' or 'Apu' is not just a word. It is a way to build a warm, personal connection. Standard chatbots feel cold and distant. When a brand replies with real, caring language—like 'Apu, we want to help you pick the right size'—the buyer feels respected and safe. By designing human chat playbooks, you turn a quick message into a long-lasting relationship."
+  },
+  {
+    id: "facebook-ads-leaking-retention",
+    title: "Why Facebook ads are leaking your customer budget",
+    category: "Experience Insights",
+    summary: "How local companies waste money buying quick attention while ignoring the checkout and packaging experiences that bring customers back.",
+    readTime: "6 min read",
+    date: "June 20, 2026",
+    slug: "facebook-ads-leaking-retention",
+    content: "Many local brands spend all their money boosting Facebook posts to get clicks. They think more views equal more sales. But what happens after the click? The customer encounters a slow website, wait hours for a chat reply, and finally gets a package in a dusty plastic bag. The excitement dies instantly. You paid money to buy their attention, but you gave them a poor experience. If your delivery and service are bad, they will never buy again. True growth happens when your unboxing and service are so beautiful that customers want to return naturally without seeing another ad."
+  },
+  {
+    id: "bangladeshi-mobile-checkout-gaps",
+    title: "The 3 biggest gaps in Bangladeshi mobile checkout design",
+    category: "Experience Breakdown",
+    summary: "Common checkout mistakes on local websites that frustrate mobile shoppers, and how to fix them for faster sales.",
+    readTime: "5 min read",
+    date: "June 18, 2026",
+    slug: "bangladeshi-mobile-checkout-gaps",
+    content: "Almost everyone in Bangladesh shops online using their phone, often while traveling in traffic or on slow internet networks. Yet, most local websites have checkout forms that are painful to fill out. First, they force you to create a password before you can buy anything. Second, the forms ask for too much details like two phone numbers and fax. Third, the payment page is confusing and drops easily. We can fix this by building a clean page. A simple form with only name, address, and mobile number, and a direct button to pay via bKash or Nagad makes checkout fast and happy."
+  },
+  {
+    id: "bideshi-unboxing-local-materials",
+    title: "Designing a premium unboxing experience with local materials",
+    category: "Bishorgo Reimagines",
+    summary: "How to use local jute, clay, and handmade paper to create world-class packaging that tells a story.",
+    readTime: "6 min read",
+    date: "June 16, 2026",
+    slug: "bideshi-unboxing-local-materials",
+    content: "Many people think that a premium package must use expensive plastic or imported gloss paper. But some of the most beautiful materials are already around us in Bangladesh. We can use thick golden jute bags, rustic clay seals, and soft handmade paper from local shops. When a customer receives a box, they don't just see a product. They touch the warm fabric of jute and smell natural grass. It tells a story of local craft and care. Using local materials is not only cheaper and eco-friendly, but it also makes your brand feel authentic and deeply premium."
   }
 ];
 

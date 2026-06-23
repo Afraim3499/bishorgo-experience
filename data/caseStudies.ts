@@ -321,6 +321,182 @@ export const caseStudiesList: CaseStudyBlueprint[] = [
       title: "Event Entry & Curation Case Study — Bishorgo",
       description: "How automated ticket gate scans and aesthetic neon photo zones resolved arts festival entry queues in Dhaka."
     }
+  },
+  {
+    slug: "dhakai-jamdani-ecommerce",
+    title: "Dhakai Jamdani E-commerce Redesign",
+    subtitle: "Turning a simple online clothes purchase into a family memory.",
+    description: "A conceptual redesign of how boutique clothing brands in Bangladesh package and deliver high-value traditional Jamdani sarees.",
+    context: "A boutique shop in Dhaka selling handcrafted sarees online.",
+    problem: "Sarees are shipped in standard plastic mailer bags, making a precious handmade item feel like a cheap plastic purchase.",
+    missedMemory: "The buyer tears open the dirty plastic bag, throws it in the trash, and completely forgets the shop name.",
+    journeyIssue: "The buyer feels excitement when buying, but disappointment when the item arrives in a cheap bag.",
+    insight: "A Jamdani is not just clothes. It is an emotional heritage item. The delivery should feel like opening a chest of memories.",
+    experienceIdea: "Wrap the saree in soft muslin cloth, place it in a solid forest-green cardboard box, spray a scent of jasmine, and write a card explaining the weaver's story.",
+    direction: "Handmade boxes, muslin wraps, jasmine scent tags, and cards about heritage weavers.",
+    outcome: "Customers sharing the unboxing on social media, treating the brand like a premium luxury experience.",
+    scenes: [
+      {
+        number: "SCENE 01",
+        setting: "INT. BEDROOM - NIGHT",
+        description: "A woman receives a delivery. She is excited, but then she sees a grey plastic bag taped together.",
+        character: "BUYER",
+        parenthetical: "disappointed",
+        dialogue: "I paid so much money for this beautiful saree. Why did they send it in a trash bag?",
+        action: "She cuts the plastic bag with scissors and throws it away.",
+        insightTitle: "THE CHEAP FINISH",
+        insightDesc: "When premium items are wrapped in cheap plastic, the value of the brand drops in the customer's mind.",
+        insightType: "problem"
+      },
+      {
+        number: "SCENE 02",
+        setting: "INT. BISHORGO STUDIO - DAY",
+        description: "A designer folds a Jamdani saree, gently placing it inside a warm green cardboard box.",
+        character: "DESIGNER",
+        parenthetical: "smiling",
+        dialogue: "This is a story made by hand. Let's make sure the customer feels that story the second they touch the box.",
+        action: "FADE IN SCENT OF JASMINE.",
+        insightTitle: "HERITAGE BOXING",
+        insightDesc: "Using clean, solid cardboard box materials and muslin wrappers keeps the heritage feel alive.",
+        insightType: "idea"
+      }
+    ],
+    metadata: {
+      title: "Dhakai Jamdani E-commerce Redesign Case Study — Bishorgo",
+      description: "How wrapping handcrafted sarees in muslin cloth and jasmine-scented boxes turns e-commerce shipping into a heritage experience."
+    }
+  },
+  {
+    slug: "chayer-tong-delivery",
+    title: "Chayer Tong Delivery Loop",
+    subtitle: "Taking the warm street tea experience to the home doorstep.",
+    description: "A conceptual redesign of how hot tea and snacks can be delivered to homes and offices in Dhaka without losing the warmth and aroma.",
+    context: "A local tea brand serving traditional spiced milk tea in Dhaka.",
+    problem: "Tea is delivered in plastic cups or plastic bags, arriving lukewarm and losing its fresh smell.",
+    missedMemory: "Drinking tea feels like a fast task instead of a relaxing moment with friends.",
+    journeyIssue: "The delivery container feels cold and industrial, destroying the cozy street-stall mood.",
+    insight: "People do not just buy tea for the drink. They buy the warm feeling of sharing a cup and talking with friends.",
+    experienceIdea: "Design a cardboard carrier shaped like a mini-tong shelf, use small earthen clay pots, and include a natural wood card to stir the tea.",
+    direction: "Cardboard shelf carriers, clay pots, and raw brown sugar packets.",
+    outcome: "Customers gathering around the box, turning a simple tea delivery into a cozy social break.",
+    scenes: [
+      {
+        number: "SCENE 01",
+        setting: "INT. OFFICE LOBBY - DHAKA - AFTERNOON",
+        description: "A worker opens a plastic bag. Inside are squished plastic cups with lukewarm tea leaking out.",
+        character: "OFFICE WORKER",
+        parenthetical: "sighs",
+        dialogue: "It is cold, and it smells like warm plastic. This is not the tea break I wanted.",
+        action: "They drink it quickly just to stay awake.",
+        insightTitle: "THE PLASTIC BARRIER",
+        insightDesc: "Plastic cups destroy the temperature, smell, and visual beauty of hot tea.",
+        insightType: "problem"
+      },
+      {
+        number: "SCENE 02",
+        setting: "INT. WORKPLACE - AFTERNOON",
+        description: "A group of workers open a box shaped like a tea stall shelf. Inside, hot tea is in earthen clay cups.",
+        character: "WORKER",
+        parenthetical: "smiling, smelling the tea",
+        dialogue: "Look at this! It feels like we are standing at our favorite street stall, but right here in the office.",
+        action: "FADE IN WARM AROMA.",
+        insightTitle: "THE TONG EXPERIENCE",
+        insightDesc: "Earthen clay cups and a tea shelf carrier recreate the cozy, social feeling of street tea culture.",
+        insightType: "idea"
+      }
+    ],
+    metadata: {
+      title: "Chayer Tong Delivery Loop Case Study — Bishorgo",
+      description: "How cardboard shelf carriers and earthen clay cups recreate the cozy street tea stall experience for home delivery in Dhaka."
+    }
+  },
+  {
+    slug: "hyperlocal-courier-unboxing",
+    title: "Hyperlocal Courier Unboxing",
+    subtitle: "Turning a stressful delivery handoff into a warm hello.",
+    description: "A conceptual redesign of how local delivery riders in Dhaka hand over packages, making the final touchpoint pleasant and memorable.",
+    context: "A D2C brand courier delivery system delivering items inside Dhaka.",
+    problem: "Riders are in a hurry, phone calls are stressful, and the package feels like a dusty piece of freight.",
+    missedMemory: "The buyer feels annoyed by the delivery phone call and wants to get it over with.",
+    journeyIssue: "The handoff is full of friction, washing away the happiness of buying the item.",
+    insight: "The delivery rider is the only human face of an online brand. That moment should feel like a welcome visitor, not a courier.",
+    experienceIdea: "Train riders to greet customers with a smile, write a simple card saying 'Gently packed for you', and use clean tactile paper bags instead of plastic.",
+    direction: "Tactile paper bags, polite greetings playbooks, and hand-packed messages.",
+    outcome: "Zero delivery complaints and a high customer repeat rate because the final step felt warm and kind.",
+    scenes: [
+      {
+        number: "SCENE 01",
+        setting: "EXT. APARTMENT GATE - DHAKA TRAFFIC - NOON",
+        description: "A customer rushes down to meet a rider who is shouting on the phone. The package is dirty.",
+        character: "CUSTOMER",
+        parenthetical: "stressed",
+        dialogue: "Please give me the package quickly. The road is so noisy, and I have to go back to work.",
+        action: "They swap the cash and package quickly with no eye contact.",
+        insightTitle: "THE STRESSFUL END",
+        insightDesc: "Loud calls and dirty packages destroy the joy of shopping, turning it into a chore.",
+        insightType: "problem"
+      },
+      {
+        number: "SCENE 02",
+        setting: "EXT. APARTMENT LOBBY - AFTERNOON",
+        description: "A delivery rider stands quietly. As the customer walks up, the rider smiles and hands over a clean paper bag.",
+        character: "RIDER",
+        parenthetical: "speaking softly",
+        dialogue: "Good afternoon. Here is your package. We hope it brings a smile to your day.",
+        action: "The customer looks surprised and smiles back.",
+        insightTitle: "THE GENTLE HANDOFF",
+        insightDesc: "Soft greetings and clean, tactile paper bags turn a simple delivery into a pleasant human connection.",
+        insightType: "idea"
+      }
+    ],
+    metadata: {
+      title: "Hyperlocal Courier Unboxing Case Study — Bishorgo",
+      description: "How soft greetings, clean paper packaging, and courier micro-scripts turn delivery handoffs in Dhaka into warm interactions."
+    }
+  },
+  {
+    slug: "old-dhaka-culinary-box",
+    title: "Old Dhaka Culinary Box",
+    subtitle: "Bringing the history of traditional food to the modern table.",
+    description: "A conceptual redesign of food delivery packaging for traditional restaurants in Dhaka, keeping the heritage and flavor intact.",
+    context: "A traditional restaurant serving historical Old Dhaka food.",
+    problem: "Food is packed in thin white boxes that leak oil, making a historic dish look like cheap fast food.",
+    missedMemory: "The customer eats the food quickly and forgets which restaurant it came from.",
+    journeyIssue: "The packaging looks cheap, destroying the rich history of the recipe.",
+    insight: "People do not just eat traditional food for the taste. They want to connect with the heritage and history of Old Dhaka.",
+    experienceIdea: "Design greaseproof boxes that unfold into serving trays, decorated with old town patterns, and include a small booklet about the recipe's origin.",
+    direction: "Greaseproof unfolding boxes, historical pamphlets, and traditional pattern art.",
+    outcome: "Customers reading the history while eating, feeling like they are experiencing a piece of cultural history.",
+    scenes: [
+      {
+        number: "SCENE 01",
+        setting: "INT. DINING ROOM - NIGHT",
+        description: "A customer opens a plastic food container. Oil has leaked all over the table.",
+        character: "CUSTOMER",
+        parenthetical: "cleaning the oil",
+        dialogue: "The food is tasty, but what a mess. This plastic box makes it feel like cheap takeout.",
+        action: "They throw the dirty container in the trash bin.",
+        insightTitle: "THE OIL LEAK",
+        insightDesc: "Leaky, generic packaging ruins the dining table experience and washes away the premium feel of the food.",
+        insightType: "problem"
+      },
+      {
+        number: "SCENE 02",
+        setting: "INT. DINING TABLE - AFTERNOON",
+        description: "A customer opens a clean cardboard box. It unfolds flat into a tray. An old-town drawing is printed inside.",
+        character: "CUSTOMER",
+        parenthetical: "reading the booklet",
+        dialogue: "Look at this. This recipe has been in Dhaka since 1953. Reading this makes the food taste even better.",
+        action: "FADE IN TRADITIONAL PATTERNS.",
+        insightTitle: "HERITAGE DINING",
+        insightDesc: "Clean, unfolding tray-boxes and recipe history booklets turn food delivery into a rich cultural story.",
+        insightType: "idea"
+      }
+    ],
+    metadata: {
+      title: "Old Dhaka Culinary Box Case Study — Bishorgo",
+      description: "How unfolding tray-packaging and recipe origin booklets turn traditional Old Dhaka food delivery into a historical dining experience."
+    }
   }
 ];
 
